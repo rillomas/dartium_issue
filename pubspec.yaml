@@ -1,0 +1,33 @@
+name: dartium_issue
+dependencies:
+  logging: any
+  intl: any
+  serialization: any
+  test: any
+  coverage: any
+  polymer: ^1.0.0-rc.15
+  browser: ^0.10.0
+  polymer_elements: ^1.0.0-rc.8
+  js: ^0.6.0
+  dart_to_js_script_rewriter: "^1.0.1"
+  # adding dependency to analyzer because of bug
+  analyzer: 0.27.2
+#  polymer_elements:
+#    git:
+#      url: https://github.com/dart-lang/polymer_elements.git
+#      ref: 1.0.0-rc.9
+  polymer_interop: ^1.0.0-rc.8
+  route_hierarchical: any
+transformers:
+#- intl:
+#    $include: lib/components/common_message.dart
+- polymer:
+    entry_points:
+    - web/index.html
+    - web/about.html
+    - web/setting.html
+    - web/room.html
+    - web/font.html
+- dart_to_js_script_rewriter
+environment:
+  sdk: ">=1.2.0 <2.0.0"
