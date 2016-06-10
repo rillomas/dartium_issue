@@ -2,7 +2,6 @@
 library user_setting;
 
 import 'dart:html';
-import 'dart:convert' show JSON;
 import 'package:polymer/polymer.dart';
 import 'package:logging/logging.dart';
 import 'package:web_components/web_components.dart' show HtmlImport;

@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:polymer/init.dart';
 import 'package:polymer/polymer.dart';
 import 'package:logging/logging.dart';
